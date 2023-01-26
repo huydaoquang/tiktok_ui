@@ -26,6 +26,8 @@ import styles from './Header.module.scss';
 import images from '~/assets/images';
 import AccountItem from '~/components/AccountItem';
 import Menu from '~/components/Popper/Menu';
+import { UploadIcon } from '~/components/Icons';
+import Image from '~/components/Image';
 
 const cx = classNames.bind(styles);
 
@@ -138,6 +140,7 @@ const Header = () => {
               <Tippy delay={200} content="Upload video" placement="bottom-end">
                 <button className={cx('action-btn')}>
                   <FontAwesomeIcon icon={faCloudUpload} />
+                  <UploadIcon className={cx('icon-header')} />
                 </button>
               </Tippy>
             </>
@@ -149,10 +152,11 @@ const Header = () => {
           )}
           <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
             {currentUser ? (
-              <img
+              <Image
                 className={cx('user-avatar')}
                 src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/ee9a80ff2618f3d77bcdeb5d169e25dd~c5_100x100.jpeg?x-expires=1674734400&x-signature=ib0CuwKtyz1LRxO6GAyTBgt5qbQ%3D"
                 alt="Nguyen Van A"
+                fallback="https://www.youtube.com/channel/UCNSCWwgW-rwmoE3Yc4WmJhw?embeds_euri=https%3A%2F%2Ffullstack.edu.vn%2F&embeds_origin=https%3A%2F%2Ffullstack.edu.vn&feature=emb_ch_name_ex"
               />
             ) : (
               <button className={cx('more-btn')}>
