@@ -6,11 +6,9 @@ import {
   faLanguage,
   faCircleXmark,
   faSpinner,
-  faMagnifyingGlass,
   faEllipsisVertical,
   faCircleQuestion,
   faKeyboard,
-  faCloudUpload,
   faUser,
   faCoins,
   faGear,
@@ -26,7 +24,7 @@ import styles from './Header.module.scss';
 import images from '~/assets/images';
 import AccountItem from '~/components/AccountItem';
 import Menu from '~/components/Popper/Menu';
-import { UploadIcon } from '~/components/Icons';
+import { InboxIcon, MessageIcon, SearchIcon, UploadIcon } from '~/components/Icons';
 import Image from '~/components/Image';
 
 const cx = classNames.bind(styles);
@@ -130,17 +128,26 @@ const Header = () => {
             </button>
             <FontAwesomeIcon className={cx('loading')} icon={faSpinner} />
             <button className={cx('search-btn')}>
-              <FontAwesomeIcon icon={faMagnifyingGlass} />
+              <SearchIcon />
             </button>
           </div>
         </HeadlessTippy>
         <div className={cx('action')}>
           {currentUser ? (
             <>
-              <Tippy delay={200} content="Upload video" placement="bottom-end">
+              <Tippy delay={200} content="Upload video" placement="bottom">
                 <button className={cx('action-btn')}>
-                  <FontAwesomeIcon icon={faCloudUpload} />
-                  <UploadIcon className={cx('icon-header')} />
+                  <UploadIcon />
+                </button>
+              </Tippy>
+              <Tippy delay={200} content="Messages" placement="bottom">
+                <button className={cx('action-btn')}>
+                  <MessageIcon />
+                </button>
+              </Tippy>
+              <Tippy delay={200} content="Inbox" placement="bottom">
+                <button className={cx('action-btn')}>
+                  <InboxIcon />
                 </button>
               </Tippy>
             </>
