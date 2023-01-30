@@ -99,6 +99,9 @@ const Header = () => {
         <Link to={config.routes.home} className={cx('logo-link')}>
           <img src={images.logo} alt="Error" />
         </Link>
+
+        <Button></Button>
+
         <Search />
         <div className={cx('action')}>
           {currentUser ? (
