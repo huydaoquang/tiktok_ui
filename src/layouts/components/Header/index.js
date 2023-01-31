@@ -58,7 +58,7 @@ const MENU_ITEMS = [
 ];
 
 const Header = () => {
-  const currentUser = true;
+  const currentUser = false;
 
   const handleMenuChange = (menuItem) => {
     console.log('🚀 ~ file: index.js:65 ~ handleMenuChange ~ menuItem', menuItem);
@@ -99,9 +99,6 @@ const Header = () => {
         <Link to={config.routes.home} className={cx('logo-link')}>
           <img src={images.logo} alt="Error" />
         </Link>
-
-        <Button></Button>
-
         <Search />
         <div className={cx('action')}>
           {currentUser ? (
