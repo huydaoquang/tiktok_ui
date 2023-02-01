@@ -3,6 +3,7 @@ import classNames from 'classnames/bind';
 import styles from './Sidebar.module.scss';
 import Menu, { MenuItem } from './Menu';
 import config from '~/config';
+import SuggestedAccounts from '~/components/SuggestedAccounts';
 import {
   HomeIcon,
   HomeActiveIcon,
@@ -25,8 +26,10 @@ const Sidebar = () => {
           icon={<UserGroupIcon />}
           activeIcon={<UserGroupActiveIcon />}
         />
-        <MenuItem title="LIVE  " to={config.routes.live} icon={<LiveIcon />} activeIcon={<LiveActiveIcon />} />
+        <MenuItem title="LIVE" to={config.routes.live} icon={<LiveIcon />} activeIcon={<LiveActiveIcon />} />
       </Menu>
+      <SuggestedAccounts label="Suggested accounts" />
+      <SuggestedAccounts label="Following accounts" />
     </aside>
   );
 };
