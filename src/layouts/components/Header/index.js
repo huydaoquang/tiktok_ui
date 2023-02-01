@@ -58,7 +58,7 @@ const MENU_ITEMS = [
 ];
 
 const Header = () => {
-  const currentUser = false;
+  const currentUser = true;
 
   const handleMenuChange = (menuItem) => {
     console.log('🚀 ~ file: index.js:65 ~ handleMenuChange ~ menuItem', menuItem);
