@@ -130,9 +130,8 @@ const Header = () => {
             {currentUser ? (
               <Image
                 className={cx('user-avatar')}
-                src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/ee9a80ff2618f3d77bcdeb5d169e25dd~c5_100x100.jpeg?x-expires=1674734400&x-signature=ib0CuwKtyz1LRxO6GAyTBgt5qbQ%3D"
+                src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/91efb7975af72df8202f0244c5ab2e34~c5_100x100.jpeg?x-expires=1675483200&x-signature=lvlJ1ei7lqyvpG%2B5vZXsVUfcfe0%3D"
                 alt="Nguyen Van A"
-                fallback="https://www.youtube.com/channel/UCNSCWwgW-rwmoE3Yc4WmJhw?embeds_euri=https%3A%2F%2Ffullstack.edu.vn%2F&embeds_origin=https%3A%2F%2Ffullstack.edu.vn&feature=emb_ch_name_ex"
               />
             ) : (
               <button className={cx('more-btn')}>
