@@ -1,9 +1,19 @@
 import React from 'react';
+import Video from '~/components/Video';
+import classNames from 'classnames/bind';
+
+import styles from './Home.module.scss';
+
+const cx = classNames.bind(styles);
 
 const Home = () => {
   return (
-    <div>
-      <h2 style={{ height: '2000px' }}>Home page</h2>
+    <div className={cx('wrapper')}>
+      <Video />
+      <Video />
+      <Video />
+      <Video />
+      <Video />
     </div>
   );
 };

@@ -171,3 +171,6 @@ export const LiveActiveIcon = ({ width = '2.4rem', height = '2.4rem', className 
     ></path>
   </svg>
 );
+export const Heart = ({ width = '2.4rem', height = '2.4rem', className }) => (
+  <svg width="24" height="24" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"></svg>
+);

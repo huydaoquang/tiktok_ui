@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import styles from './SuggestedAccounts.module.scss';
 import AccountItem from './AccountItem';
+import Line from '../Line';
 
 const cx = classNames.bind(styles);
 
 const SuggestedAccounts = ({ label }) => {
   return (
     <div className={cx('wrapper')}>
+      <Line />
       <p className={cx('label')}>{label}</p>
       <AccountItem />
       <AccountItem />

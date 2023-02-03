@@ -1,0 +1,73 @@
+.wrapper {
+  max-width: 692px;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.account-item {
+  display: flex;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.container-info {
+  display: flex;
+  flex-direction: column;
+}
+.item-info {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 12px;
+}
+
+.nickname {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+.check {
+  font-size: 1.4rem;
+  color: #20d5ec;
+}
+.name {
+  font-size: 1.2rem;
+  opacity: #161823bf;
+}
+.avatar {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.content {
+  margin-left: 12px;
+}
+
+.follow-btn {
+  padding: 6px 16px;
+}
+
+.video-item {
+  max-width: 300px;
+  max-height: 500px;
+  object-fit: cover;
+  background: var(--text-color);
+  border-radius: 8px;
+  margin-left: 7rem;
+  margin-bottom: 10px;
+}
