@@ -7,17 +7,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .account-item {
   display: flex;
+  gap: 1rem;
   padding: 8px 0;
   cursor: pointer;
 }
 
 .avatar {
-  width: 32px;
-  height: 32px;
+  width: 5.5rem;
+  height: 5.5rem;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -29,7 +31,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  margin-left: 12px;
+  margin-left: 10px;
 }
 
 .nickname {
@@ -47,19 +49,19 @@
   font-size: 1.2rem;
   opacity: #161823bf;
 }
-.avatar {
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%;
-  object-fit: cover;
-}
 
-.content {
-  margin-left: 12px;
+.title-account {
+  margin-left: 10px;
+  font-size: 1.2rem;
 }
 
 .follow-btn {
   padding: 6px 16px;
+}
+
+.body {
+  display: flex;
+  gap: 2rem;
 }
 
 .video-item {
@@ -69,5 +71,38 @@
   background: var(--text-color);
   border-radius: 8px;
   margin-left: 7rem;
-  margin-bottom: 10px;
+}
+
+.list-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(22, 24, 35, 0.06);
+}
+
+.icon {
+  font-size: 2.2rem;
+}
+.number {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: var(--font-family);
 }

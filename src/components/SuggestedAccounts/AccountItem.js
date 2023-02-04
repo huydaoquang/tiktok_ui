@@ -9,6 +9,7 @@ import { Wrapper as PopperWrapper } from '~/components/Popper';
 import styles from './SuggestedAccounts.module.scss';
 import AccountPreview from './AccountPreview';
 import Image from '../Image';
+import { data } from '~/data';
 
 const cx = classNames.bind(styles);
 
@@ -17,9 +18,11 @@ const AccountItem = () => {
     return (
       <div tabIndex="-1" {...props}>
         <PopperWrapper>
-          <div className={cx('preview')}>
-            <AccountPreview />
-          </div>
+          {data.map((item, index) => (
+            <div className={cx('preview')} key={index}>
+              <AccountPreview data={item} />
+            </div>
+          ))}
         </PopperWrapper>
       </div>
     );
@@ -28,24 +31,24 @@ const AccountItem = () => {
   return (
     // warning tippy.js
     // Using a wrapper <div> or <span> tag around the reference element solves this by creating a new parentNode context.
-    <div>
-      <Tippy interactive delay={[300, 300]} offset={[-20, 0]} placement="bottom" render={renderPreview}>
-        <div className={cx('account-item')}>
-          <Image
-            className={cx('avatar')}
-            src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/65d3c6b1d1e205c75536ccf1f26d552d~c5_100x100.jpeg?x-expires=1675432800&x-signature=%2BRB9kct0vUYr25MlyGiuXREA7xI%3D"
-            alt=""
-          />
-          <div className={cx('item-info')}>
-            <div className={cx('nickname')}>
-              <h4>theanh28entertainment</h4>
-              <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />
+    <>
+      {data.map((item, index) => (
+        <div key={index}>
+          <Tippy visible={false} delay={[300, 300]} offset={[-20, 0]} placement="bottom" render={renderPreview}>
+            <div className={cx('account-item')}>
+              <Image className={cx('avatar')} src={item.avatar} alt="" />
+              <div className={cx('item-info')}>
+                <div className={cx('nickname')}>
+                  <h4>{item.nickname}</h4>
+                  {item.tick && <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />}
+                </div>
+                <p className={cx('name')}>{item.full_name}</p>
+              </div>
             </div>
-            <p className={cx('name')}>Theanh28 Entertainment</p>
-          </div>
+          </Tippy>
         </div>
-      </Tippy>
-    </div>
+      ))}
+    </>
   );
 };
 // AccountItem.propTypes = {};

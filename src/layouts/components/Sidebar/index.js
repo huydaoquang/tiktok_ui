@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames/bind';
+
 import styles from './Sidebar.module.scss';
 import Menu, { MenuItem } from './Menu';
 import config from '~/config';
@@ -12,6 +13,9 @@ import {
   LiveIcon,
   LiveActiveIcon,
 } from '~/components/Icons';
+
+import Line from '~/components/Line';
+import Discover from '~/components/Discover';
 
 const cx = classNames.bind(styles);
 
@@ -28,8 +32,12 @@ const Sidebar = () => {
         />
         <MenuItem title="LIVE" to={config.routes.live} icon={<LiveIcon />} activeIcon={<LiveActiveIcon />} />
       </Menu>
+      <Line />
       <SuggestedAccounts label="Suggested accounts" />
+      <Line />
       <SuggestedAccounts label="Following accounts" />
+      <Line />
+      <Discover label="Discover" />
     </aside>
   );
 };

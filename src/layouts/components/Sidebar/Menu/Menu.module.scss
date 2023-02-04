@@ -2,10 +2,11 @@
   display: flex;
   align-items: center;
   padding: 8px 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: var(--text-color);
   border-radius: 4px;
+  overflow-y: auto;
   transition: background-color ease-in-out 200ms;
 
   &.active {
