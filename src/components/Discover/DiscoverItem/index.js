@@ -6,11 +6,11 @@ import styles from './DiscoverItem.module.scss';
 
 const cx = classNames.bind(styles);
 
-const DiscoverItem = ({ icon, content }) => {
+const DiscoverItem = ({ icon, label }) => {
   return (
     <Link to="/tag/" className={cx('discover-item')}>
       {icon}
-      <p>{content}</p>
+      <p className={cx('label')}>{label.nickname}</p>
     </Link>
   );
 };

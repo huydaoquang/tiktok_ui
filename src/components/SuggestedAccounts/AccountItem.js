@@ -13,7 +13,7 @@ import { data } from '~/data';
 
 const cx = classNames.bind(styles);
 
-const AccountItem = () => {
+const AccountItem = ({ dataAccountItem }) => {
   const renderPreview = (props) => {
     return (
       <div tabIndex="-1" {...props}>
@@ -31,24 +31,20 @@ const AccountItem = () => {
   return (
     // warning tippy.js
     // Using a wrapper <div> or <span> tag around the reference element solves this by creating a new parentNode context.
-    <>
-      {data.map((item, index) => (
-        <div key={index}>
-          <Tippy visible={false} delay={[300, 300]} offset={[-20, 0]} placement="bottom" render={renderPreview}>
-            <div className={cx('account-item')}>
-              <Image className={cx('avatar')} src={item.avatar} alt="" />
-              <div className={cx('item-info')}>
-                <div className={cx('nickname')}>
-                  <h4>{item.nickname}</h4>
-                  {item.tick && <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />}
-                </div>
-                <p className={cx('name')}>{item.full_name}</p>
-              </div>
+    <div>
+      <Tippy visible={false} delay={[300, 300]} offset={[-20, 0]} placement="bottom" render={renderPreview}>
+        <div className={cx('account-item')}>
+          <Image className={cx('avatar')} src={dataAccountItem.avatar} alt="" />
+          <div className={cx('item-info')}>
+            <div className={cx('nickname')}>
+              <h4>{dataAccountItem.nickname}</h4>
+              {dataAccountItem.tick && <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />}
             </div>
-          </Tippy>
+            <p className={cx('name')}>{dataAccountItem.full_name}</p>
+          </div>
         </div>
-      ))}
-    </>
+      </Tippy>
+    </div>
   );
 };
 // AccountItem.propTypes = {};

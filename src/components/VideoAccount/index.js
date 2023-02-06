@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faHeart, faShare, faCommentDots } from '@fortawesome/free-solid-svg-icons';
@@ -13,6 +13,18 @@ import { data } from '~/data';
 const cx = classNames.bind(styles);
 
 const VideoAccount = () => {
+  const [valueCount, setValueCount] = useState(0);
+
+  const count = useRef(0);
+
+  useEffect(() => {
+    count.current = count.current + 1;
+  }, [valueCount]);
+
+  const handleCountHeart = () => {
+    setValueCount(valueCount + 1);
+  };
+
   return (
     <>
       {data.map((item, index) => (
@@ -40,11 +52,11 @@ const VideoAccount = () => {
           <div className={cx('body')}>
             <video className={cx('video-item')} src={item.video_account} type="video/mp4" controls></video>
             <div className={cx('list-icon')}>
-              <div className={cx('item')}>
+              <div className={cx('item')} onClick={handleCountHeart}>
                 <div className={cx('circle')}>
                   <FontAwesomeIcon className={cx('icon')} icon={faHeart} />
                 </div>
-                <span className={cx('number')}>123</span>
+                <span className={cx('number')}>{count.current}</span>
               </div>
               <div className={cx('item')}>
                 <div className={cx('circle')}>
