@@ -1,3 +1,5 @@
+import audio from '~/assets/audio';
+
 export const data = [
   {
     id: 2,
@@ -15,8 +17,7 @@ export const data = [
     facebook_url: '',
     youtube_url: '',
     twitter_url: '',
-    video_account:
-      'https://v16-webapp.tiktok.com/38dc41203cb7d9f90d6dcc44985bcdda/63df71d2/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0Nnqi64jVVi6PpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230205030703D0623DCC28B6E09ADF01&btag=80000',
+    video_account: `${audio.tiktok}`,
     created_at: '2022-05-05 23:10:05',
     updated_at: '2022-05-05 23:11:39',
   },
@@ -38,7 +39,7 @@ export const data = [
     twitter_url: '',
 
     video_account:
-      'https://v16-webapp.tiktok.com/38dc41203cb7d9f90d6dcc44985bcdda/63df71d2/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0Nnqi64jVVi6PpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230205030703D0623DCC28B6E09ADF01&btag=80000',
+      'https://v16-webapp.tiktok.com/b0015c04aa938bc1189465642c89ed4f/63e13844/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0s-2l64jVvyTPpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230206112601F974F79B50F099009228&btag=80000',
     created_at: '2022-09-11 12:25:57',
     updated_at: '2023-02-01 16:15:40',
   },
@@ -59,7 +60,7 @@ export const data = [
     youtube_url: '',
     twitter_url: '',
     video_account:
-      'https://v16-webapp.tiktok.com/38dc41203cb7d9f90d6dcc44985bcdda/63df71d2/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0Nnqi64jVVi6PpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230205030703D0623DCC28B6E09ADF01&btag=80000',
+      'https://v16-webapp.tiktok.com/b0015c04aa938bc1189465642c89ed4f/63e13844/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0s-2l64jVvyTPpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230206112601F974F79B50F099009228&btag=80000',
     created_at: '2022-08-22 00:14:16',
     updated_at: '2022-12-06 09:27:49',
   },
@@ -81,7 +82,7 @@ export const data = [
     twitter_url: '',
 
     video_account:
-      'https://v16-webapp.tiktok.com/38dc41203cb7d9f90d6dcc44985bcdda/63df71d2/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0Nnqi64jVVi6PpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230205030703D0623DCC28B6E09ADF01&btag=80000',
+      'https://v16-webapp.tiktok.com/b0015c04aa938bc1189465642c89ed4f/63e13844/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0s-2l64jVvyTPpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230206112601F974F79B50F099009228&btag=80000',
     created_at: '2022-10-22 10:51:15',
     updated_at: '2023-02-01 16:15:54',
   },
@@ -103,7 +104,7 @@ export const data = [
     twitter_url: '',
 
     video_account:
-      'https://v16-webapp.tiktok.com/38dc41203cb7d9f90d6dcc44985bcdda/63df71d2/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0Nnqi64jVVi6PpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230205030703D0623DCC28B6E09ADF01&btag=80000',
+      'https://v16-webapp.tiktok.com/b0015c04aa938bc1189465642c89ed4f/63e13844/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0s-2l64jVvyTPpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230206112601F974F79B50F099009228&btag=80000',
     created_at: '2022-08-24 08:24:48',
     updated_at: '2023-01-28 13:14:25',
   },
@@ -125,7 +126,7 @@ export const data = [
     twitter_url: '',
 
     video_account:
-      'https://v16-webapp.tiktok.com/38dc41203cb7d9f90d6dcc44985bcdda/63df71d2/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0Nnqi64jVVi6PpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230205030703D0623DCC28B6E09ADF01&btag=80000',
+      'https://v16-webapp.tiktok.com/b0015c04aa938bc1189465642c89ed4f/63e13844/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0s-2l64jVvyTPpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230206112601F974F79B50F099009228&btag=80000',
     created_at: '2022-09-12 19:33:29',
     updated_at: '2022-10-02 19:17:02',
   },
@@ -147,7 +148,7 @@ export const data = [
     twitter_url: '',
 
     video_account:
-      'https://v16-webapp.tiktok.com/38dc41203cb7d9f90d6dcc44985bcdda/63df71d2/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0Nnqi64jVVi6PpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230205030703D0623DCC28B6E09ADF01&btag=80000',
+      'https://v16-webapp.tiktok.com/b0015c04aa938bc1189465642c89ed4f/63e13844/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0s-2l64jVvyTPpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230206112601F974F79B50F099009228&btag=80000',
     created_at: '2022-11-20 00:06:57',
     updated_at: '2023-02-04 11:26:22',
   },
@@ -169,7 +170,7 @@ export const data = [
     twitter_url: '',
 
     video_account:
-      'https://v16-webapp.tiktok.com/38dc41203cb7d9f90d6dcc44985bcdda/63df71d2/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0Nnqi64jVVi6PpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230205030703D0623DCC28B6E09ADF01&btag=80000',
+      'https://v16-webapp.tiktok.com/b0015c04aa938bc1189465642c89ed4f/63e13844/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0s-2l64jVvyTPpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230206112601F974F79B50F099009228&btag=80000',
     created_at: '2022-10-17 19:20:26',
     updated_at: '2023-02-02 14:26:00',
   },
@@ -191,7 +192,7 @@ export const data = [
     twitter_url: '',
 
     video_account:
-      'https://v16-webapp.tiktok.com/38dc41203cb7d9f90d6dcc44985bcdda/63df71d2/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0Nnqi64jVVi6PpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230205030703D0623DCC28B6E09ADF01&btag=80000',
+      'https://v16-webapp.tiktok.com/b0015c04aa938bc1189465642c89ed4f/63e13844/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0s-2l64jVvyTPpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230206112601F974F79B50F099009228&btag=80000',
     created_at: '2022-09-11 12:25:57',
     updated_at: '2023-02-01 16:15:40',
   },
@@ -213,7 +214,7 @@ export const data = [
     twitter_url: '',
 
     video_account:
-      'https://v16-webapp.tiktok.com/38dc41203cb7d9f90d6dcc44985bcdda/63df71d2/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0Nnqi64jVVi6PpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230205030703D0623DCC28B6E09ADF01&btag=80000',
+      'https://v16-webapp.tiktok.com/b0015c04aa938bc1189465642c89ed4f/63e13844/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0s-2l64jVvyTPpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230206112601F974F79B50F099009228&btag=80000',
     created_at: '2022-08-22 00:14:16',
     updated_at: '2022-12-06 09:27:49',
   },
@@ -235,7 +236,7 @@ export const data = [
     twitter_url: '',
 
     video_account:
-      'https://v16-webapp.tiktok.com/38dc41203cb7d9f90d6dcc44985bcdda/63df71d2/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0Nnqi64jVVi6PpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230205030703D0623DCC28B6E09ADF01&btag=80000',
+      'https://v16-webapp.tiktok.com/b0015c04aa938bc1189465642c89ed4f/63e13844/video/tos/useast2a/tos-useast2a-pve-0037-aiso/o0vtaASZkPQQeDUjz2ebDBQ6GQRGHoIMVDnJCQ/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1900&bt=950&cs=0&ds=3&ft=4b~OyM3a8Zmo0s-2l64jVvyTPpWrKsdm&mime_type=video_mp4&qs=0&rc=aTM1OTU2PDVkOmc3ZDZmZ0BpMzlzODc6Zm43aTMzZjgzM0A0X19fYy1iXzAxYmEwMzNeYSNoMXNncjQwMGFgLS1kL2Nzcw%3D%3D&l=20230206112601F974F79B50F099009228&btag=80000',
     created_at: '2023-01-03 14:15:00',
     updated_at: '2023-02-04 10:57:33',
   },
