@@ -2,3 +2,13 @@
   border-top: 1px solid #e3e3e4;
   margin: 18px 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .line-bottom {
+    display: none;
+  }
+  .line-half {
+    width: 50%;
+    margin: 18px auto;
+  }
+}

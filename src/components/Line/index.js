@@ -5,8 +5,8 @@ import styles from './Line.module.scss';
 
 const cx = classNames.bind(styles);
 
-const Line = () => {
-  return <div className={cx('line')}></div>;
+const Line = ({ className }) => {
+  return <div className={cx('line', { [className]: className })}></div>;
 };
 
 export default Line;

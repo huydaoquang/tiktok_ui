@@ -32,11 +32,11 @@ const Sidebar = () => {
         />
         <MenuItem title="LIVE" to={config.routes.live} icon={<LiveIcon />} activeIcon={<LiveActiveIcon />} />
       </Menu>
-      <Line />
+      <Line className={cx('line-half')} />
       <SuggestedAccounts label="Suggested accounts" />
-      <Line />
+      <Line className={cx('line-half')} />
       <SuggestedAccounts label="Following accounts" />
-      <Line />
+      <Line className={cx('line-bottom')} />
       <Discover label="Discover" />
     </aside>
   );

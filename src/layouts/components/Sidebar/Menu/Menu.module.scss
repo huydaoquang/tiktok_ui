@@ -34,3 +34,14 @@
 .active-icon {
   display: none;
 }
+@media only screen and (max-width: 600px) {
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .title {
+    display: none;
+  }
+}

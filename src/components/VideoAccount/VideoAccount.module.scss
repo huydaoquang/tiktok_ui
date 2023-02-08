@@ -11,27 +11,33 @@
 }
 
 .account-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
   gap: 1rem;
   padding: 8px 0;
   cursor: pointer;
 }
 
+.picture {
+  width: 5rem;
+  height: 5rem;
+}
 .avatar {
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   object-fit: cover;
 }
 .container-info {
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
 }
 .item-info {
   display: flex;
   align-items: center;
   gap: 4px;
-  margin-left: 10px;
+  padding-left: 10px;
 }
 
 .nickname {
@@ -51,7 +57,7 @@
 }
 
 .title-account {
-  margin-left: 10px;
+  padding-left: 10px;
   font-size: 1.2rem;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -65,7 +71,7 @@
   padding: 6px 16px;
 }
 
-.body {
+.section {
   display: flex;
   gap: 2rem;
 }
@@ -111,4 +117,47 @@
   font-size: 1.2rem;
   font-weight: 600;
   font-family: var(--font-family);
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    padding-right: 1rem;
+  }
+
+  .account-item {
+    gap: 0;
+  }
+
+  .item-info {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .nickname {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .name {
+      display: block;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+
+  .video-item {
+    max-width: 217px;
+    max-height: 378px;
+    object-fit: cover;
+    background: var(--text-color);
+    border-radius: 8px;
+    margin-left: 0;
+  }
+
+  .follow-btn {
+    margin-right: 0.5rem;
+  }
 }

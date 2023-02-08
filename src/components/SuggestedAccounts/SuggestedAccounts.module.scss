@@ -1,6 +1,5 @@
 // Suggested Accounts
 .wrapper {
-  height: max-content;
   overflow-y: auto;
 }
 
@@ -12,6 +11,7 @@
 // Account Item
 .account-item {
   display: flex;
+  flex-direction: row;
   align-items: center;
   padding: 8px 0;
   cursor: pointer;
@@ -45,9 +45,42 @@
   opacity: #161823bf;
 }
 .more-btn {
-  padding: 8px;
+  padding: 8px 0;
   font-size: 1.4rem;
   font-weight: 700;
   color: #fe2c55;
   cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .label {
+    display: none;
+  }
+
+  .item-info {
+    display: none;
+  }
+
+  .nickname {
+    display: none;
+  }
+
+  .check {
+    display: none;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .more-btn {
+    display: none;
+    background-color: white;
+  }
 }

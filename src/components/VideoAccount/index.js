@@ -30,7 +30,9 @@ const VideoAccount = () => {
         <div className={cx('wrapper')} key={index}>
           <div className={cx('header')}>
             <div className={cx('account-item')}>
-              <Image className={cx('avatar')} src={item.avatar} alt="" />
+              <div className={cx('picture')}>
+                <Image className={cx('avatar')} src={item.avatar} alt="" />
+              </div>
               <div className={cx('container-info')}>
                 <div className={cx('item-info')}>
                   <div className={cx('nickname')}>
@@ -48,7 +50,7 @@ const VideoAccount = () => {
               Follow
             </Button>
           </div>
-          <div className={cx('body')}>
+          <div className={cx('section')}>
             <video className={cx('video-item')} controls>
               <source src={item.video_account} type="video/mp4" />
             </video>
