@@ -37,7 +37,7 @@
     }
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px), (max-width: 600px) {
   .wrapper {
     padding-bottom: 10rem;
     width: 72px;

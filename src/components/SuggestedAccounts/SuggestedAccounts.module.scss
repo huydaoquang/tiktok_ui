@@ -51,7 +51,7 @@
   color: #fe2c55;
   cursor: pointer;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px), (max-width: 600px) {
   .wrapper {
     display: flex;
     flex-direction: column;

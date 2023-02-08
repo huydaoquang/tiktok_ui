@@ -2,6 +2,23 @@
   margin-left: 425px;
   padding-top: 24px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    margin-left: 200px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .wrapper {
+    margin-left: 150px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    margin-left: 120px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .wrapper {
     margin-left: 100px;
