@@ -2,7 +2,7 @@ import React from 'react';
 
 const Following = () => {
   return (
-    <div>
+    <div style={{ marginLeft: '500px' }}>
       <h2>Following page</h2>
     </div>
   );

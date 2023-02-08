@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faHeart, faShare, faCommentDots } from '@fortawesome/free-solid-svg-icons';
 
 import styles from './VideoAccount.module.scss';
-// import audio from '~/assets/audio';
 import Line from '../Line';
 import Image from '../Image';
 import Button from '../Button';
@@ -19,7 +18,7 @@ const VideoAccount = () => {
 
   useEffect(() => {
     count.current = count.current + 1;
-  }, [valueCount]);
+  });
 
   const handleCountHeart = () => {
     setValueCount(valueCount + 1);
@@ -50,13 +49,15 @@ const VideoAccount = () => {
             </Button>
           </div>
           <div className={cx('body')}>
-            <video className={cx('video-item')} src={item.video_account} type="video/mp4" controls></video>
+            <video className={cx('video-item')} controls>
+              <source src={item.video_account} type="video/mp4" />
+            </video>
             <div className={cx('list-icon')}>
-              <div className={cx('item')} onClick={handleCountHeart}>
+              <div className={cx('item')}>
                 <div className={cx('circle')}>
-                  <FontAwesomeIcon className={cx('icon')} icon={faHeart} />
+                  <FontAwesomeIcon className={cx('icon')} icon={faHeart} onClick={handleCountHeart} />
                 </div>
-                <span className={cx('number')}>{count.current}</span>
+                <span className={cx('number')}>{valueCount}</span>
               </div>
               <div className={cx('item')}>
                 <div className={cx('circle')}>
