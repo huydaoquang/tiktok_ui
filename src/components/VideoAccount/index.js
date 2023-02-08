@@ -36,7 +36,7 @@ const VideoAccount = () => {
               <div className={cx('container-info')}>
                 <div className={cx('item-info')}>
                   <div className={cx('nickname')}>
-                    <h4>{item.nickname}</h4>
+                    <h4 className={cx('text')}>{item.nickname}</h4>
                     {item.tick && <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />}
                   </div>
                   <p className={cx('name')}>{item.full_name}</p>

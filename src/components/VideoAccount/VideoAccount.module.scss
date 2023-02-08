@@ -31,7 +31,7 @@
 .container-info {
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
+  margin-left: 10px;
 }
 .item-info {
   display: flex;
@@ -57,7 +57,7 @@
 }
 
 .title-account {
-  margin-left: -10px;
+  margin-left: 10px;
   font-size: 1.2rem;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -131,19 +131,24 @@
   .item-info {
     width: 90px;
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     gap: 4px;
 
     .nickname {
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
+      max-width: 68px;
+
+      .text {
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+        white-space: nowrap;
+      }
     }
 
     .name {
-      display: block;
+      max-width: 68px;
       text-overflow: ellipsis;
-      overflow: hidden;
+      overflow-x: hidden;
       white-space: nowrap;
     }
   }
